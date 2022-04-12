@@ -5,14 +5,12 @@
 using namespace std;
 
 int main(){
-filebuf file;
-string buffer = " ";
+ifstream file;
 set<char> l;
 list<char> e;
 graph<char> B;
-file.open("graphB.dat",ios::in);
-istream file2(&file);
-file2 >> B;
+file.open("graphB.dat");
+file >> B;
 file.close();
 char inp;
 cout << "Input a character for a vertex: ";
