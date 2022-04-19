@@ -19,7 +19,7 @@ l = bfs(B,inp);
 writeContainer(l.begin(),l.end());
 cout << endl;
 dfs(B,e);
-writeContainer(e.begin(),e.end());
+writeContainer(e.rbegin(),e.rend());
 cout << endl;
     return 0;
 }
